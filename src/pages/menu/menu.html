@@ -1,0 +1,46 @@
+
+  
+  <ion-nav #mycontent [root]="rootPage"></ion-nav>
+<!--header page1, avec boutton de recherche et ajout de personnes-->
+<ion-header>
+        <ion-toolbar>
+          <ion-buttons start>
+            <button ion-button icon-only color="royal">
+              <ion-icon name="search"></ion-icon>
+            </button>
+          </ion-buttons>
+          <ion-title>Filleul</ion-title>
+          <ion-buttons end>
+            <button ion-button icon-only color="royal" (tap)="gotoadd()">
+              <ion-icon name="person-add"></ion-icon>
+            </button>
+          </ion-buttons>
+        </ion-toolbar>
+      </ion-header>
+      
+      <ion-content>
+            <ion-list>
+                    <ion-item>
+                      <ion-thumbnail item-start>
+                        <img src="">
+                      </ion-thumbnail>
+                      <h2>RAKOTO</h2>
+                      <p>Antananarivo • 1988</p>
+                      <button ion-button clear item-end (tap)="gotodetail()">View</button>
+                    </ion-item>
+                    <ion-item>
+                            <ion-thumbnail item-start>
+                              <img src="">
+                            </ion-thumbnail>
+                            <h2>RAMEVA</h2>
+                            <p>Tamatave • 1988</p>
+                            <button ion-button clear item-end (tap)="gotodetail()">View</button>
+                          </ion-item>
+                  </ion-list>
+      </ion-content>
+      
+
+
+  
+
+  

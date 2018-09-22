@@ -1,0 +1,39 @@
+
+<div class="en-tete">
+    <ion-header>
+      <ion-toolbar color="primary">
+        <ion-title class="titre1">OpenVDI</ion-title>
+      </ion-toolbar>
+    </ion-header>
+  </div>
+
+
+
+<ion-content padding>
+
+  <div class="authentification">
+    <ion-icon class="iconeuser" ios="ios-contact" md="md-contact"></ion-icon> 
+    <ion-list>
+    
+      <ion-item>
+        <ion-label floating>Username</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+    
+      <ion-item>
+        <ion-label floating>Password</ion-label>
+        <ion-input type="password"></ion-input>
+      </ion-item>
+    
+    </ion-list>
+    </div>
+
+  <!--boutton pour aller vers "menu"-->
+  <button id="button1" ion-button full (tap)="gotomenu()">Log In</button>
+
+  <div padding class="signupbutton">
+    <button ion-button small (tap)="gotosignin()">Sign Up</button>
+  </div>
+
+  <p class="txtwelc">Welcome to OpenVDI. Please Log In or Sign Up.</p> 
+</ion-content>
